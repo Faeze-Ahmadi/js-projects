@@ -46,7 +46,7 @@ if (question === "calculator") {
     const scoreList = [];
 
     for (let i = 1 ; i <= 5; i++) {
-        const num = parseInt(prompt("Enter your score:"))
+        const num = parseFloat(prompt("Enter your score:"))
         scoreList.push(num);
     }
 
