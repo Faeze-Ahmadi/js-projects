@@ -12,8 +12,8 @@ function calculator (a = 0, op, b = 0) {
             default:
                 return "operator is wrong!"
         }
-    }
-    return "sth is wrong!"
+    } 
+    return "one of the numbers is not true!"
 }
 
 const leftNum = +prompt("Enter Left Number:");
