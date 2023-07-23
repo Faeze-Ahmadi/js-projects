@@ -38,4 +38,22 @@ if (question === "calculator") {
    
 
 
+} else if (question === "score") {
+    function score (average_score) {
+        return average_score
+    }
+
+    const scoreList = [];
+
+    for (let i = 1 ; i <= 5; i++) {
+        const num = parseInt(prompt("Enter your score:"))
+        scoreList.push(num);
+    }
+
+    const sum = scoreList.reduce((acc, curr) => acc + curr, 0);
+    const average = sum / scoreList.length;
+
+    console.log(score(average));
+
+
 }
