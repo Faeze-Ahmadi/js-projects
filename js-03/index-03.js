@@ -56,4 +56,7 @@ if (question === "calculator") {
     console.log(score(average));
 
 
+} else {
+    console.log("type the correct word or phrase!! calculator, capital letters or score?");
 }
+
