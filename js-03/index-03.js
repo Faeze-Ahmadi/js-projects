@@ -59,3 +59,4 @@ if (question === "calculator") {
 } else {
     console.log("type the correct word or phrase!! calculator, capital letters or score?");
 }
+
