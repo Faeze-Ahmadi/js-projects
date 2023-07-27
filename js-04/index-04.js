@@ -22,8 +22,8 @@ console.log(celsiusToFahrenheit(celsius));
    
   }
 
-  let sentence = prompt("write youe sentence or phrase:");
-  let word = prompt("Enter the word:");
+  const sentence = prompt("write youe sentence or phrase:");
+  const word = prompt("Enter the word:");
 
   if (word_search(sentence, word)) {
     console.log("exist :)");
