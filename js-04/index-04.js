@@ -29,4 +29,44 @@ console.log(celsiusToFahrenheit(celsius));
   }
   
 
-}
+
+} else if (question === "product information") {
+
+    const addToCartList = [];
+    const removeFromCartList = [];
+
+    const productInfo = {
+        name: "lap-top",
+        price: 300000,
+        brand: "ASUS",
+        model: "A12",
+        productionYear: 2021,
+        graphic: 7
+        }
+
+        function addToCart(x) {
+            return x
+        }
+
+        function removeFromCart(y) {
+            return y
+        }
+
+        const addORremove = prompt("add or remove product from cart");
+        if (addORremove === "add") {
+            addToCartList.push({name: "lap-top", price: 300000, brand: "ASUS", model: "A12", productionYear: 2021, graphic: 7})
+            for (let i = 0; i < addToCartList.length; i++) {
+                console.log(addToCartList[i]);
+              }
+            console.log("added")
+        } else if (addORremove === "remove") {
+            removeFromCartList.splice(0, removeFromCart.length);
+            console.log("removed!")
+        }
+
+
+    }
+
+   // let gf = {name: "lap-top", price: 300000, brand: "ASUS", model: "A12", productionYear: 2021, graphic: 7}
+
+
