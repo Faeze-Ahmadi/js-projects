@@ -16,16 +16,17 @@ console.log(celsiusToFahrenheit(celsius));
     
     function word_search (sentence, word) {
         if (sentence.toLowerCase().includes(word.toLowerCase())) return sentence, word 
-        else throw Error("the word is not fined in sentence.")
+        else throw Error("the word is not fined in sentence!")
 
     }
    
-  }
 
   const sentence = prompt("write youe sentence or phrase:");
   const word = prompt("Enter the word:");
 
   if (word_search(sentence, word)) {
-    console.log("exist :)");
+    console.log("this word is exists in sentence.");
   }
   
+
+}
