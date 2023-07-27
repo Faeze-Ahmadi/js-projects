@@ -66,6 +66,8 @@ console.log(celsiusToFahrenheit(celsius));
         }
 
 
+    } else {
+        console.log("type the correct word or phrase!! temperature conversion, word search or product information?");
     }
 
 
