@@ -61,12 +61,12 @@ console.log(celsiusToFahrenheit(celsius));
             console.log("added")
         } else if (addORremove === "remove") {
             removeFromCartList.splice(0, removeFromCart.length);
+            console.log("your list is empty now.")
             console.log("removed!")
         }
 
 
     }
 
-   // let gf = {name: "lap-top", price: 300000, brand: "ASUS", model: "A12", productionYear: 2021, graphic: 7}
 
 
