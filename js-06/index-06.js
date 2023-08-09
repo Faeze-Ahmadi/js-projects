@@ -15,14 +15,20 @@ const persons = [{
     field: 'economy'
 }]
 
-const addNewPerson = (name, age, id, field) => {
-    const name_ = prompt("tell the name?")
-    const age_ = +prompt("tell the age?")
-    const id_ = +prompt("tell the id?")
-    const field_ = prompt("tell the field?")
-    return {name_, age_, id_, field_}
+// const addNewPerson = (name, age, id, field) => {
+//     const name_ = prompt("tell the name?")
+//     const age_ = +prompt("tell the age?")
+//     const id_ = +prompt("tell the id?")
+//     const field_ = prompt("tell the field?")
+//     return {name_, age_, id_, field_}
 
-}
+// }
+// persons.push(addNewPerson())
+// console.log(persons)
 
-persons.push(addNewPerson())
-console.log(persons)
+
+
+// const indexNum = +prompt("tell the number of obj, that will remove?")
+// persons.splice(indexNum, 1)
+// console.log(persons)
+
