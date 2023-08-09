@@ -39,5 +39,12 @@ console.log(persons)
 
 
 } else if (question === "edit") {
-    
+    for (let i = 0; i < persons.length; i++){
+        if (persons[i].id === 717) {
+            persons[i].name = "faeze";
+        }
+    }
+
+console.log(persons)
+
 }
