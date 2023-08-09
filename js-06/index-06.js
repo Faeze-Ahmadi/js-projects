@@ -14,3 +14,14 @@ const persons = [{
     id: 371,
     field: 'economy'
 }]
+
+const addNewPerson = (name, age, id, field) => {
+    const name = prompt("tell the name?")
+    const age = prompt("tell the age?")
+    const id = prompt("tell the id?")
+    const field = prompt("tell the field?")
+    return {name, age, id, field}
+
+}
+
+persons.push(addNewPerson())
