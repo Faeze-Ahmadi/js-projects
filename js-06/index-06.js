@@ -16,12 +16,13 @@ const persons = [{
 }]
 
 const addNewPerson = (name, age, id, field) => {
-    const name = prompt("tell the name?")
-    const age = prompt("tell the age?")
-    const id = prompt("tell the id?")
-    const field = prompt("tell the field?")
-    return {name, age, id, field}
+    const name_ = prompt("tell the name?")
+    const age_ = +prompt("tell the age?")
+    const id_ = +prompt("tell the id?")
+    const field_ = prompt("tell the field?")
+    return {name_, age_, id_, field_}
 
 }
 
 persons.push(addNewPerson())
+console.log(persons)
