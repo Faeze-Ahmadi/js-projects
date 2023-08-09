@@ -47,4 +47,6 @@ console.log(persons)
 
 console.log(persons)
 
+} else {
+    console.log("type the correct word or phrase!! add, remove or edit?");
 }
