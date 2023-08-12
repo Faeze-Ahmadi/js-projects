@@ -1,5 +1,5 @@
 type Person = {
-    name: string | unknown;
+    name: string | any;
     family_name: string | unknown;
     age: number;
     job: string | unknown;
@@ -94,15 +94,7 @@ if (question === "add") {
     console.log(persons_info)
     
     } else if (question === "sort") {
-        persons_info.sort((a, b) => {
-            if (a.name < b.name) {
-                return -1
-            } 
-            if (a.name > b.name) {
-                return 1
-            }
-            return 0
-        });
+        persons_info.sort((a, b) => a.name.localeCompare(b.name));
     
     
     
