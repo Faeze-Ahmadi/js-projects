@@ -79,7 +79,8 @@ else if (question === "remove or edit") {
 }
 else if (question === "sort") {
     persons_info.sort((a, b) => a.name.localeCompare(b.name));
+    console.log(persons_info);
 }
 else {
-    console.log("type the correct word or phrase!! add, remove or edit?");
+    console.log("type the correct word or phrase!! add, remove or edit, sort?");
 }
