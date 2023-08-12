@@ -86,7 +86,8 @@ if (question === "add") {
             if (persons_info[i].id === Number(id_Q)) {
                 persons_info[i].name = prompt("tell the person name");
             } else {
-                
+                persons_info.slice(i, 1);
+                break;
             }
         }
     
