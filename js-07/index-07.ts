@@ -77,4 +77,21 @@ if (question === "add") {
     }
     persons_info.push(addNewPerson());
     console.log(persons_info);
-}
+
+
+
+} else if (question === "remove or edit") {
+        for (let i = 0; i < persons_info.length; i++){
+            const id_Q: string | unknown = prompt("tell the id");
+            if (persons_info[i].id === Number(id_Q)) {
+                persons_info[i].name = prompt("tell the person name");
+            } else {
+                
+            }
+        }
+    
+    console.log(persons_info)
+    
+    } else {
+        console.log("type the correct word or phrase!! add, remove or edit?");
+    }
