@@ -1,0 +1,14 @@
+{
+  "name": "js-projects",
+  "version": "1.0.0",
+  "description": "typescript",
+  "main": "index-07.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js-07"
+  ],
+  "author": "faeze ahmadi",
+  "license": "ISC"
+}
