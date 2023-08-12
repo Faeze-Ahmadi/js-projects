@@ -102,5 +102,5 @@ if (question === "add") {
     
     
      } else {
-        console.log("type the correct word or phrase!! add, remove or edit?");
+        console.log("type the correct word or phrase!! add, remove or edit?,  sort");
     }
