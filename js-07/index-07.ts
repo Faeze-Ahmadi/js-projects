@@ -1,24 +1,24 @@
-type persons = {
-    name: string;
-    family_name: string;
+type Person = {
+    name: string | unknown;
+    family_name: string | unknown;
     age: number;
-    job: string;
+    job: string | unknown;
     married: boolean;
-    genger: "male" | "female";
-    height: number | string;
-    weight: number | string;
+    gender: "male" | "female" | unknown;
+    height: number | string | unknown;
+    weight: number | string | unknown;
     id: number;
     phone_number: number;
 }
 
-const persons_info: Array<persons> = [
+const persons_info: Array<Person> = [
     {
         name: "faeze",
         family_name: "ahamdi",
         age: 20,
         job: "writer",
         married: false,
-        genger: "female",
+        gender: "female",
         height: 157,
         weight: 48,
         id: 717,
@@ -29,7 +29,7 @@ const persons_info: Array<persons> = [
         age: 25,
         job: "teacher",
         married: true,
-        genger: "female",
+        gender: "female",
         height: 167,
         weight: 56,
         id: 219,
@@ -40,7 +40,7 @@ const persons_info: Array<persons> = [
         age: 30,
         job: "bloger",
         married: true,
-        genger: "male",
+        gender: "male",
         height: 191,
         weight: 87,
         id: 313,
@@ -48,3 +48,33 @@ const persons_info: Array<persons> = [
     }
 ]
 
+const question = prompt("tell me what codes do you want: add, remove or edit object?");
+
+if (question === "add") {
+    const addNewPerson = (): Person => {
+        const name_ = prompt("tell the name?");
+        const family_name_ = prompt("tell the family name?");
+        const age_ = Number(prompt("tell the age?"));
+        const job_ = prompt("tell the job?");
+        const married_ = Boolean(prompt("tell the marital status?"));
+        const gender_ = prompt("tell the gender?");
+        const height_ = prompt("tell the height?");
+        const weight_ = prompt("tell the weight?");
+        const id_ = Number(prompt("tell the ID?"));
+        const phone_number_ = Number(prompt("tell the phone number?"));
+        return {
+            name: name_,
+            family_name: family_name_,
+            age: age_,
+            job: job_,
+            married: married_,
+            gender: gender_ as "male" | "female",
+            height: height_,
+            weight: weight_,
+            id: id_,
+            phone_number: phone_number_,
+        };
+    }
+    persons_info.push(addNewPerson());
+    console.log(persons_info);
+}
