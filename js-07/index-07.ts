@@ -48,7 +48,7 @@ const persons_info: Array<Person> = [
     }
 ]
 
-const question = prompt("tell me what codes do you want: add, remove or edit object?");
+const question = prompt("tell me what codes do you want: add, remove or edit, sort object?");
 
 if (question === "add") {
     const addNewPerson = (): Person => {
@@ -93,6 +93,21 @@ if (question === "add") {
     
     console.log(persons_info)
     
-    } else {
+    } else if (question === "sort") {
+        persons_info.sort((a, b) => {
+            if (a.name < b.name) {
+                return -1
+            } 
+            if (a.name > b.name) {
+                return 1
+            }
+            return 0
+        });
+    
+    
+    
+    
+    
+     } else {
         console.log("type the correct word or phrase!! add, remove or edit?");
     }
