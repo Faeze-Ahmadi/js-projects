@@ -10,5 +10,8 @@
     "js-07"
   ],
   "author": "faeze ahmadi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  }
 }
